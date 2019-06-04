@@ -32,7 +32,7 @@ Assumptions/Criteria:
 * Smoke tests all passed, 0 bug
 
 ### Over All Workflow
-* [workFlow](/doc/workFlow.pdf)
+![workFlow](/doc/workFlow.png)
 
 ## Question-2: Automation test script.
 As a sr QA engineer in www.amazon.com, you want to prepare an automatic test script for login function. So that you and your colleagues can maintain current quality of login function. 
