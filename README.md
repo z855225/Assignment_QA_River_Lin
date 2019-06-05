@@ -14,6 +14,7 @@ Assumptions/Criteria:
 
 ### Smoke Test Cases
 ![medium](/doc/medium.png)
+
 * User can sign up
 * User can sign in
 * User can upgrade membership
@@ -41,3 +42,52 @@ Assumptions:
 * There is only one amazon web site -> https://www.amazon.com/
 * This script is not only for you but also for your colleagues
 * This test script focus on login only (no need to consider sign-up, logout)
+
+### Test Cases
+![ECP](/doc/ECP.png)
+
+* It should login with valid email and password
+* It should show an error message with valid email and invalid password
+* It should show an error message with invalid email and valid password
+* It should show an error message with empty email and valid password
+* It should show an error message with empty email and password
+
+### Acceptance Criteria
+* Test cases all passed, 0 bug
+
+### Automation Framework
+[Cypress](https://www.cypress.io)
+
+#### Why ?
+##### Easy to setup
+* All the drivers and dependencies are automatically installed
+
+##### Speed
+* Runs directly in the browser with no network communication
+
+##### Record tests
+* Screenshot and video
+
+#### Get started
+* Install npm [https://www.npmjs.com/get-npm](https://www.npmjs.com/get-npm) 
+* git clone https://github.com/z855225/Assignment_QA_River_Lin.git
+* cd path/to/your/project
+* npm install cypress
+
+#### Write tests in any text editor
+![testCase](/doc/testCase.png)
+* Write your test case in cypress/integration folder
+
+![customCommand](/doc/customCommand.png)
+* Write your custom commands in cypress/support/commands.js file
+
+#### Debug in Cypress Test Runner
+* $(npm bin)/cypress open --env email=test@example.com,password=yourPassword
+
+![testRunner](/doc/testRunner.png)
+
+#### Run test from command line
+![commandLine](/doc/commandLine.png)
+
+* $(npm bin)/cypress run --env email=test@example.com,password=yourPassword
+* It is easy to include it in CI/CD pipelines
