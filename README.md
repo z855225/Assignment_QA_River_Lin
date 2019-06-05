@@ -75,11 +75,13 @@ Assumptions:
 * npm install cypress
 
 #### Write tests in any text editor
-![testCase](/doc/testCase.png)
 * Write your test case in cypress/integration folder
 
-![customCommand](/doc/customCommand.png)
+![testCase](/doc/testCase.png)
+
 * Write your custom commands in cypress/support/commands.js file
+
+![customCommand](/doc/customCommand.png)
 
 #### Debug in Cypress Test Runner
 * $(npm bin)/cypress open --env email=test@example.com,password=yourPassword
@@ -87,7 +89,7 @@ Assumptions:
 ![testRunner](/doc/testRunner.png)
 
 #### Run test from command line
-![commandLine](/doc/commandLine.png)
-
 * $(npm bin)/cypress run --env email=test@example.com,password=yourPassword
 * It is easy to include it in CI/CD pipelines
+
+![commandLine](/doc/commandLine.png)
