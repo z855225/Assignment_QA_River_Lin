@@ -93,3 +93,7 @@ Assumptions:
 * It is easy to include it in CI/CD pipelines
 
 ![commandLine](/doc/commandLine.png)
+
+#### Demo
+
+![demo](/doc/demo.gif)
